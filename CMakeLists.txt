@@ -504,6 +504,7 @@ LIST(APPEND utils_sources
     src/utils/translate-commit-desc.cpp
     src/utils/json-utils.cpp
     src/utils/log.c
+    src/utils/stl.cpp
     )
 IF (WIN32)
     LIST(APPEND utils_sources
@@ -787,4 +788,5 @@ IF (BUILD_TESTING)
     ADD_QTEST(test_server-info)
     ADD_QTEST(test_utils)
     ADD_QTEST(test_file-utils)
+    ADD_QTEST(test_stl)
 ENDIF()
